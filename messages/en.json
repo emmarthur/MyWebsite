@@ -3,7 +3,7 @@
     "home": "Home",
     "career": "Career",
     "hobbies": "Hobbies",
-    "relationships": "Relationships",
+    "health": "Health & Lifestyle",
     "thoughts": "Thoughts",
     "media": "Media",
     "settings": "Settings"
@@ -121,9 +121,9 @@
     "title": "Hobbies",
     "description": "Creative pursuits and personal interests"
   },
-  "relationships": {
-    "title": "Relationships",
-    "description": "Connections, experiences, and memories"
+  "health": {
+    "title": "Health & Lifestyle",
+    "description": "Wellness, fitness, nutrition, and healthy living"
   },
   "thoughts": {
     "title": "Thoughts & Reflections",
@@ -147,6 +147,15 @@
       "title": "Timezone Settings",
       "description": "Select your preferred timezone to display the date and time correctly",
       "current": "Current Timezone"
+    },
+    "fonts": {
+      "title": "Font Settings",
+      "description": "Choose your preferred font for headings. Gaming fonts will automatically use a universal font for languages they don't support.",
+      "current": "Current Font",
+      "selectFont": "Select Font",
+      "supportsAllLanguages": "Supports All Languages",
+      "latinOnly": "Latin Only",
+      "cyrillicWarning": "This font doesn't support Cyrillic characters. A universal font will be used for Russian/Ukrainian text."
     }
   }
 }

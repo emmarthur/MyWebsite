@@ -3,7 +3,7 @@
     "home": "Accueil",
     "career": "Carrière",
     "hobbies": "Loisirs",
-    "relationships": "Relations",
+    "health": "Santé et Mode de Vie",
     "thoughts": "Réflexions",
     "media": "Médias",
     "settings": "Paramètres"
@@ -121,9 +121,9 @@
     "title": "Loisirs",
     "description": "Poursuites créatives et intérêts personnels"
   },
-  "relationships": {
-    "title": "Relations",
-    "description": "Connexions, expériences et souvenirs"
+  "health": {
+    "title": "Santé et Mode de Vie",
+    "description": "Bien-être, fitness, nutrition et vie saine"
   },
   "thoughts": {
     "title": "Réflexions",
@@ -147,6 +147,15 @@
       "title": "Paramètres de Fuseau Horaire",
       "description": "Sélectionnez votre fuseau horaire préféré pour afficher correctement la date et l'heure",
       "current": "Fuseau Horaire Actuel"
+    },
+    "fonts": {
+      "title": "Paramètres de Police",
+      "description": "Choisissez votre police préférée pour les titres. Les polices de jeu utiliseront automatiquement une police universelle pour les langues qu'elles ne supportent pas.",
+      "current": "Police Actuelle",
+      "selectFont": "Sélectionner une Police",
+      "supportsAllLanguages": "Prend en Charge Toutes les Langues",
+      "latinOnly": "Latin Seulement",
+      "cyrillicWarning": "Cette police ne prend pas en charge les caractères cyrilliques. Une police universelle sera utilisée pour le texte russe/ukrainien."
     }
   }
 }

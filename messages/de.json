@@ -3,7 +3,7 @@
     "home": "Startseite",
     "career": "Karriere",
     "hobbies": "Hobbys",
-    "relationships": "Beziehungen",
+    "health": "Gesundheit & Lebensstil",
     "thoughts": "Gedanken",
     "media": "Medien",
     "settings": "Einstellungen"
@@ -121,9 +121,9 @@
     "title": "Hobbys",
     "description": "Kreative Beschäftigungen und persönliche Interessen"
   },
-  "relationships": {
-    "title": "Beziehungen",
-    "description": "Verbindungen, Erfahrungen und Erinnerungen"
+  "health": {
+    "title": "Gesundheit & Lebensstil",
+    "description": "Wohlbefinden, Fitness, Ernährung und gesundes Leben"
   },
   "thoughts": {
     "title": "Gedanken",
@@ -147,6 +147,15 @@
       "title": "Zeitzoneneinstellungen",
       "description": "Wählen Sie Ihre bevorzugte Zeitzone aus, um Datum und Uhrzeit korrekt anzuzeigen",
       "current": "Aktuelle Zeitzone"
+    },
+    "fonts": {
+      "title": "Schrifteinstellungen",
+      "description": "Wählen Sie Ihre bevorzugte Schriftart für Überschriften. Spielschriften verwenden automatisch eine universelle Schriftart für Sprachen, die sie nicht unterstützen.",
+      "current": "Aktuelle Schriftart",
+      "selectFont": "Schriftart Auswählen",
+      "supportsAllLanguages": "Unterstützt Alle Sprachen",
+      "latinOnly": "Nur Latein",
+      "cyrillicWarning": "Diese Schriftart unterstützt keine kyrillischen Zeichen. Eine universelle Schriftart wird für russischen/ukrainischen Text verwendet."
     }
   }
 }

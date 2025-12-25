@@ -12,6 +12,9 @@
   --accent-purple: #9b59b6;
   --accent-teal: #1abc9c;
   --accent-gold: #f39c12;
+  /* Font selection - default to Roboto (universal) */
+  --selected-heading-font: var(--font-roboto), 'Roboto', sans-serif;
+  --heading-fallback-font: '';
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,6 +29,76 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Use selected font for all body text */
+  font-family: var(--selected-heading-font, var(--font-roboto), 'Roboto', sans-serif) !important;
+}
+
+/* Force all headings to use the selected font - highest priority with !important */
+/* This ensures fonts work consistently across all languages including Cyrillic */
+/* The font will change instantly when the CSS variable is updated */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--selected-heading-font, var(--font-roboto), 'Roboto', sans-serif) !important;
+  font-feature-settings: normal !important;
+  font-variant: normal !important;
+  /* Force font rendering for all character sets */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Ensure font changes are visible immediately */
+  will-change: font-family;
+}
+
+/* Ensure ALL body text uses the selected font - every single character */
+p, span, div, a, li, td, th, label, input, textarea, select, button,
+article, section, aside, nav, header, footer, main,
+blockquote, cite, code, pre, em, strong, b, i, u, small, sub, sup,
+ul, ol, dl, dt, dd, table, thead, tbody, tfoot, tr, caption,
+form, fieldset, legend, optgroup, option {
+  font-family: var(--selected-heading-font, var(--font-roboto), 'Roboto', sans-serif) !important;
+  font-feature-settings: normal !important;
+  font-variant: normal !important;
+  will-change: font-family;
+}
+
+/* Catch any other text elements */
+*, *::before, *::after {
+  font-family: inherit !important;
+}
+
+/* Override for elements with font-heading class - highest priority */
+.font-heading,
+[class*="font-heading"],
+[class*="font-heading"] * {
+  font-family: var(--selected-heading-font, var(--font-roboto), 'Roboto', sans-serif) !important;
+  font-feature-settings: normal !important;
+  font-variant: normal !important;
+  will-change: font-family;
+}
+
+/* Override for elements with font-body class */
+.font-body,
+[class*="font-body"] {
+  font-family: var(--font-rajdhani), 'Rajdhani', sans-serif !important;
+  font-feature-settings: normal !important;
+  font-variant: normal !important;
+}
+
+/* Force all headings and their direct text children to use selected font */
+/* This ensures translated text in headings uses the selected font */
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+  font-family: var(--selected-heading-font, var(--font-roboto), 'Roboto', sans-serif) !important;
+  font-feature-settings: normal !important;
+  font-variant: normal !important;
+  will-change: font-family;
+}
+
+/* Additional rule to catch any nested text in headings */
+.font-heading,
+.font-heading *,
+h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 * {
+  font-family: var(--selected-heading-font, var(--font-roboto), 'Roboto', sans-serif) !important;
+  will-change: font-family;
 }
 
 @layer utilities {

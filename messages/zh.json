@@ -3,7 +3,7 @@
     "home": "首页",
     "career": "职业",
     "hobbies": "爱好",
-    "relationships": "关系",
+    "health": "健康与生活方式",
     "thoughts": "思考",
     "media": "媒体",
     "settings": "设置"
@@ -121,9 +121,9 @@
     "title": "爱好",
     "description": "创意追求和个人兴趣"
   },
-  "relationships": {
-    "title": "关系",
-    "description": "联系、经历和回忆"
+  "health": {
+    "title": "Health & Lifestyle",
+    "description": "Wellness, fitness, nutrition, and healthy living"
   },
   "thoughts": {
     "title": "思考与反思",
@@ -147,6 +147,15 @@
       "title": "时区设置",
       "description": "选择您首选的时区以正确显示日期和时间",
       "current": "当前时区"
+    },
+    "fonts": {
+      "title": "字体设置",
+      "description": "选择您首选的标题字体。游戏字体将自动为不支持的语言使用通用字体。",
+      "current": "当前字体",
+      "selectFont": "选择字体",
+      "supportsAllLanguages": "支持所有语言",
+      "latinOnly": "仅拉丁文",
+      "cyrillicWarning": "此字体不支持西里尔字符。俄语/乌克兰语文本将使用通用字体。"
     }
   }
 }

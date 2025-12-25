@@ -3,7 +3,7 @@
     "home": "Inicio",
     "career": "Carrera",
     "hobbies": "Pasatiempos",
-    "relationships": "Relaciones",
+    "health": "Salud y Estilo de Vida",
     "thoughts": "Pensamientos",
     "media": "Medios",
     "settings": "Configuración"
@@ -121,9 +121,9 @@
     "title": "Pasatiempos",
     "description": "Actividades creativas e intereses personales"
   },
-  "relationships": {
-    "title": "Relaciones",
-    "description": "Conexiones, experiencias y recuerdos"
+  "health": {
+    "title": "Salud y Estilo de Vida",
+    "description": "Bienestar, fitness, nutrición y vida saludable"
   },
   "thoughts": {
     "title": "Pensamientos y Reflexiones",
@@ -147,6 +147,15 @@
       "title": "Configuración de Zona Horaria",
       "description": "Selecciona tu zona horaria preferida para mostrar la fecha y hora correctamente",
       "current": "Zona Horaria Actual"
+    },
+    "fonts": {
+      "title": "Configuración de Fuente",
+      "description": "Elige tu fuente preferida para los encabezados. Las fuentes de juego usarán automáticamente una fuente universal para idiomas que no soportan.",
+      "current": "Fuente Actual",
+      "selectFont": "Seleccionar Fuente",
+      "supportsAllLanguages": "Soporta Todos los Idiomas",
+      "latinOnly": "Solo Latín",
+      "cyrillicWarning": "Esta fuente no soporta caracteres cirílicos. Se usará una fuente universal para texto ruso/ucraniano."
     }
   }
 }
